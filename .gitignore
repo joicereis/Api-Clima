@@ -1,0 +1,45 @@
+# Ignore the build output directories
+/bin/
+/obj/
+/out/
+/publish/
+
+/# Ignore the user-specific files
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+# Ignore the NuGet packages folder
+/packages/
+*.nupkg
+
+# Ignore Visual Studio for Mac files
+.vscode/
+
+# Ignore the logs and temporary files
+/logs/
+/temp/
+*.log
+
+# Ignore user secrets and sensitive config files
+appsettings.Development.json
+appsettings.json
+secrets.json
+
+# Ignore databases (if applicable)
+*.db
+
+# Ignore the Visual Studio specific folder
+.vs/
+
+# Ignore IDE-specific files
+.idea/
+
+# Ignore macOS and Windows metadata files
+.DS_Store
+Thumbs.db
+
+# Ignore test results and coverage reports
+/test-results/
+/coverage/
