@@ -30,13 +30,13 @@ A resposta será um objeto JSON com as informações do clima atual da cidade es
 
 ```json
 {
-  "city": "Sao Paulo",
-  "region": "Sao Paulo",
-  "tempCelsius": 21.4,
-  "humidity": 73,
-  "condition": "Partly cloudy",
-  "iconeCondicion": "//cdn.weatherapi.com/weather/64x64/day/116.png",
-  "windSpeed": 17.6
+  "city": "Salvador",
+  "region": "Bahia",
+  "tempCelsius": 27,
+  "humidity": 70,
+  "condition": "Encoberto",
+  "iconCondition": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+  "windSpeed": 24.1
 }
 ```
 
