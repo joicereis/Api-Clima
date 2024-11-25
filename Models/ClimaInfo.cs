@@ -7,7 +7,7 @@
         public double TempCelsius { get; set; }
         public double Humidity { get; set; }
         public string Condition { get; set; }
-        public string IconeCondicion { get; set; }
+        public string IconCondition { get; set; }
         public double WindSpeed { get; set; }
     }
 }

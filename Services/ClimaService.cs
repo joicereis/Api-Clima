@@ -16,15 +16,16 @@ namespace Api_Clima.Services
         }
 
         public async Task<ClimaInfo> GetClimaAsync(string city)
-        {
+        {           
             string newCity = RemoverAcentosDaCidade(city);
             return await _climaRepository.GetClimaAsync(newCity);
         }
 
         public static string RemoverAcentosDaCidade(string city)
         {
-            if (string.IsNullOrWhiteSpace(city))
+           /* if (string.IsNullOrWhiteSpace(city))
                 return city;
+           */
 
             // Normaliza o texto para decompor caracteres acentuados
             var cityNormalize = city.Normalize(NormalizationForm.FormD);

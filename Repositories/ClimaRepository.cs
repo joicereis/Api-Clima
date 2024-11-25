@@ -16,7 +16,7 @@ namespace Api_Clima.Repositories
 
         public async Task<ClimaInfo> GetClimaAsync(string city)
         {
-            var url = $"{BaseUrl}/current.json?key={ApiKey}&q={city}&aqi=no";
+            var url = $"{BaseUrl}/current.json?key={ApiKey}&q={city}&aqi=no&lang=pt";
             var response = await _httpClient.GetFromJsonAsync<ClimaResponse>(url);
 
             if (response != null)
@@ -28,7 +28,7 @@ namespace Api_Clima.Repositories
                     TempCelsius = response.Current.Temp_C,
                     Humidity = response.Current.Humidity,
                     Condition = response.Current.Condition.Text,
-                    IconeCondicion = response.Current.Condition.Icon, 
+                    IconCondition = response.Current.Condition.Icon, 
                     WindSpeed = response.Current.Wind_Kph
                 };
             }

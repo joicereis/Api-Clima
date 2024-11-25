@@ -20,14 +20,18 @@ namespace Api_Clima.Controllers
         {
             try
             {
+                if (string.IsNullOrEmpty(city))
+                {
+                    return BadRequest(new {Error = "O parâmetro 'city' é obrigatório."});
+                }
+
                 var clima = await _climaService.GetClimaAsync(city);
                 return Ok(clima);
             }
             catch (Exception ex)
             {
-                return  BadRequest(new { message = ex.Message });
+                return BadRequest(new { ex.Message });
             }
-
         }
     }
 
